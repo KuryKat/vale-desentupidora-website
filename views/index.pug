@@ -1,0 +1,12 @@
+extends layouts/layout/index
+
+block head
+  link(rel="stylesheet", href="/css/pages/index.css")
+  script(src="/js/pages/index.js")
+
+block content
+  include layouts/carousel
+  #body.margin-top
+    include layouts/cardBox
+    .margin-bottom
+    include layouts/servicesCards

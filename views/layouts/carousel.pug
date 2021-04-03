@@ -1,0 +1,47 @@
+#main-carousel.carousel.slide(data-bs-ride='carousel' data-bs-interval='100000')
+  .carousel-indicators
+    for carousel in carousels
+      if carousel.index == 0
+        button.active(type='button' data-bs-target='#main-carousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      else 
+        button(type='button' data-bs-target='#main-carousel' data-bs-slide-to=carousel.index aria-label="Slide " + (carousel.index+1))
+  .carousel-inner
+    for carousel in carousels
+      if carousel.index == 0
+        .carousel-item.active
+          img.d-block.w-100(src=carousel.image.url alt=carousel.image.text)
+          .carousel-caption
+              h1.bold #{carousel.title}
+              if carousel.hasIcons
+                .flex-icons
+                  for icon in carousel.icons
+                      span.icon-text.black-shadow
+                        span.icon 
+                          i(class="fas fa-" + icon.name + " fa-2x")
+                        span.space
+                          h1 #{icon.text}
+              p #{carousel.text}
+              if carousel.hasButton
+                a.btn.btn-primary(href=carousel.button.link) #{carousel.button.text}
+      else
+        .carousel-item
+          img.d-block.w-100(src=carousel.image.url alt=carousel.image.text)
+          .carousel-caption
+              h1.bold #{carousel.title}
+              if carousel.hasIcons
+                .flex-icons
+                  for icon in carousel.icons
+                      span.icon-text.black-shadow
+                        span.icon 
+                          i(class= icon.type + " fa-" + icon.name + " fa-2x")
+                        span.space
+                          h1 #{icon.text}
+              p #{carousel.text}
+              if carousel.hasButton
+                a.btn.btn-primary(href=carousel.button.link) #{carousel.button.text}
+  button.carousel-control-prev(type='button' data-bs-target='#main-carousel' data-bs-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.visually-hidden Previous
+  button.carousel-control-next(type='button' data-bs-target='#main-carousel' data-bs-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.visually-hidden Next

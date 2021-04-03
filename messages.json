@@ -1,0 +1,103 @@
+{
+    "sobre": {
+        "title": "Sobre a Vale Desentupidora",
+        "text": "Entupiu? Conte com quem entende de desentupimento! A Vale Desentupidora realiza serviços de desentupimento de pias, ralos, vasos sanitários, esgotos, canos, colunas, redes pluviais, caça vazamento de água, limpeza de caixa dàgua, limpeza de caixa de gordura. Também atuamos como limpa fossa. Estamos 24 horas à sua disposição! Atuamos em Todo o Vale do Paraiba.",
+        "image": {
+            "url": "/img/splash/limpeza-caixa-de-gordura.png",
+            "alt": "Foto Ilustrativa"
+        }
+    },
+    "atendimento": {
+        "title": "Atendimento 24 Horas",
+        "text": "Na sua emergência é com a gente que você pode contar, temos um atendimento exclusivo 24 horas por dia 7 dias por semana, para todos os tipos de situações de entupimento vamos até o local para analisar e resolver o mais rápido possível lembrando que o serviço só e executado mediante a sua aprovação!",
+        "image": {
+            "url": "/img/splash/vazamento-de-agua.jpg",
+            "alt": "Foto Ilustrativa"
+        }
+    },
+    "faleConosco": {
+        "title": "Fale Conosco!",
+        "text": "Envie-nos uma mensagem ou nos ligue gratuitamente, estamos disponíveis para lhe atender e resolver de uma vez por todas seu problema.",
+        "image": {
+            "url": "/img/splash/limpeza-caixa-dagua.jpg",
+            "alt": "Foto Ilustrativa"
+        }
+    },
+    "carousels": [
+        {
+            "index": 0,
+            "title": "Realizamos Desentupimentos em Geral. Atendemos 24 horas em toda a Cidade",
+            "text": "Click no botão abaixo e solicite seu ORÇAMENTO 100% GRÁTIS. E Obtenha um desconto diferenciado e exclusivo!",
+            "image": {
+                "url": "/img/carousel/carousel-image-1.jpg",
+                "alt": "Carousel Image"
+            },
+            "hasIcons": false,
+            "hasButton": true,
+            "button": {
+                "link": "#orcamento",
+                "text": "Faça um orçamento"
+            }
+        },
+        {
+            "index": 1,
+            "title": "Realizamos serviços para todos os tipos de públicos:",
+            "text": "Entre em contato e receba um desconto super diferenciado: Aceitamos todos os cartões de débito e crédito!",
+            "image": {
+                "url": "/img/carousel/carousel-image-2.jpg",
+                "text": "Carousel Image"
+            },
+            "hasIcons": true,
+            "icons": [
+                {
+                    "name": "home",
+                    "type": "fas",
+                    "text": "Atendimento Residencial"
+                },
+                {
+                    "name": "city",
+                    "type": "fas",
+                    "text": "Atendimento Comercial"
+                },
+                {
+                    "name": "industry",
+                    "type": "fas",
+                    "text": "Atendimento Industrial"
+                },
+                {
+                    "name": "warehouse",
+                    "type": "fas",
+                    "text": "Atendimento Condomínios"
+                }
+            ],
+            "hasButton": false
+        },
+        {
+            "index": 2,
+            "title": "Garantia de Qualidade com Preço Justo e Atendimento Rápido",
+            "text": "Entre em contato e receba um desconto super diferenciado: Enviaremos uma equipe profissional rapidamente",
+            "image": {
+                "url": "/img/carousel/carousel-image-3.jpg",
+                "text": "Carousel Image"
+            },
+            "hasIcons": true,
+            "icons": [
+                {
+                    "name": "comment-dollar",
+                    "type": "fas",
+                    "text": "Preço Acessível"
+                },
+                {
+                    "name": "comments",
+                    "type": "fas",
+                    "text": "Atendemos Rapidamente"
+                }
+            ],
+            "hasButton": true,
+            "button": {
+                "link": "tel:5512997553884",
+                "text": "+55 (12) 99755-3884"
+            }
+        }
+    ]
+}

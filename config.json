@@ -1,0 +1,17 @@
+{
+    "server": {
+        "port": 3000,
+        "session": {
+            "secret": "7OOUZDutdMbc1fvW2U5AhPNYCybZARlc"
+        }
+    },
+    "email": {
+        "host": "",
+        "port": 45,
+        "secure": false,
+        "auth": {
+            "user": "",
+            "pass": ""
+        }
+    }
+}

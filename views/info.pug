@@ -1,0 +1,13 @@
+extends layouts/layout/index
+
+block head
+  link(rel="stylesheet", href="/css/pages/info.css")
+
+block content
+  .info-page
+    h1.title.bold #{message.title}
+    .container.flex-view
+      p.text #{message.text}
+      img.image(src=message.image.url, alt=message.image.alt)
+
+

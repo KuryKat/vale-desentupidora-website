@@ -1,0 +1,10 @@
+extends layouts/layout/index
+
+block head 
+  link(rel="stylesheet", href="/css/pages/404.css")
+
+block content
+  .container.not-found
+    h1.code #{title}
+    h2.message #{text}
+    a.btn.btn-primary.btn-green(href=url || "/") Voltar

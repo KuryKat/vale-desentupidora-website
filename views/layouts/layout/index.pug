@@ -1,0 +1,47 @@
+doctype html
+html(lang="pt-BR")
+  head
+    title=(title ? title + " | " : "") + "Vale Desentupidora - Entupiu? Ligue 24 horas +55 (12) 99755-3884"
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(name="theme-color" content="#01cc00")
+    meta(name="description" content=description || "<Descrição do site>")
+    meta(name="keywords" content=keywords || "desentupidora 24-horas detetização desentupir pia banheiro")
+    meta(name="author" content="KuryKat")
+    meta(property="og:description" content=description || "<Descrição do site>")
+    meta(property="og:keywords" content=keywords || "desentupidora 24-horas detetização desentupir pia banheiro")
+    meta(property="og:site_name" content=name)
+    meta(property="og:url" content="valedesentupidora.com.br")
+    meta(property="og:image" content="/img/favicon.ico")
+    link(rel="icon" href="/img/favicon.ico" type="image/x-icon" sizes="128x128")
+
+    //- CSS LIBS
+    link(rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/lib/font-awesome/css/all.min.css")
+
+    //- MAIN CSSS
+    link(rel="stylesheet" href="/css/style.css")
+
+    //- CSS FOR SERVICES CARDBOX
+    link(rel="stylesheet", href="/css/pages/services.css")
+    link(rel="stylesheet", href="/css/card.css")
+
+    //- JS LIBS
+    script(src="/lib/bootstrap/js/bootstrap.bundle.min.js")
+    script(src="/lib/jquery.min.js")
+    script(src="/lib/font-awesome/js/all.min.js" defer)
+
+    //- MAIN JS
+    script(src="/js/index.js")
+    block head
+  body
+    include navbar
+    a.whatsapp-badge(href="https://api.whatsapp.com/send?phone=5512997553884&text=Olá")
+      img(src="/img/icons/WhatsApp_icon.png", alt="Ícone Whatsapp")
+    include contact
+    
+
+    block content
+    include budget
+    include footer
+            

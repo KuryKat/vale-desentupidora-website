@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Hidrojateamento",
+        "url": "hidrojateamento",
+        "description": "Com bombas de alta pressão, realizamos a desobstrução de bueiros, redes de esgoto, galerias, colunas coletoras, poços de recalque, entre outros.",
+        "image": "/img/services/hidrojateamento.jpg"
+    },
+    {
+        "name": "Desentupimento em Sanitários",
+        "url": "desentupimento/sanitarios",
+        "description": "A Vale Desentupidora está preparada para realizar serviços em diferentes segmentos: residências, comércios, indústrias, escolas e hospitais.",
+        "image": "/img/services/desentupimento-de-vaso.jpg"
+    },
+    {
+        "name": "Desentupimento de Ralo",
+        "url": "desentupimento/ralos",
+        "description": "Com a Nossa Desentupidora, o cliente dispensa a possibilidade de quebrar pisos, paredes ou azulejos, pois contamos com equipamentos de alta tecnologia para descobrir o local exato do problema.",
+        "image": "/img/services/desentupimento-de-ralo.jpg"
+    },
+    {
+        "name": "Desentupimento de Pia",
+        "url": "desentupimento/pias",
+        "description": "A Equipe da Vale Desentupidora é formada por profissionais qualificados, executa o serviços sem causar qualquer incômodo ou necessidade de quebrar paredes ou pia.",
+        "image": "/img/services/desentupimento-de-pia.jpg"
+    },
+    {
+        "name": "Controle De Pragas",
+        "url": "controle-pragas",
+        "description": "A Vale Desentupidora se preocupa com a saúde e bem estar de nossos clientes, por isso trabalhamos com produtos sem cheiro, autorizado pelo ministério da Saúde e Anvisa. Nossos colaboradores são especializados e treinados, você não precisa sair de casa, com nosso método sua empresa não vai parar. Tudo é feito com qualidade e garantia. Químicos registrados no CRQ - Controle Regional de Química.",
+        "image": "/img/services/controle-de-pragas.jpg"
+    },
+    {
+        "name": "Desentupimento de colunas",
+        "url": "desentupimento/colunas",
+        "description": "Se o seu problema for com entupimento de colunas, saiba que você pode entrar em contato agora mesmo conosco, e nos informar detalhadamente sua situação para que possamos fazer a avaliação e a visita, lembrando que isso é totalmente grátis.",
+        "image": "/img/services/desentupimento-de-colunas-coletoras.jpg"
+    },
+    {
+        "name": "Desentupimento de Cano",
+        "url": "desentupimento/cano",
+        "description": "A Vale Desentupidora oferece Serviço de Desentupimento de cano que é essencial para garantir o melhor escoamento da água de pias, ralos, tanques e da rede de esgoto.",
+        "image": "/img/services/desentupimento-de-cano.jpg"
+    },
+    {
+        "name": "Dedetização",
+        "url": "dedetizacao",
+        "description": "A dedetização é feita com aplicação de produto inseticida, eliminando com garantia e segurança todos os focos de insetos. Baratas, pulgas, formigas, aranhas, traças e insetos rasteiros em geral. Dedetização com profissionais treinados e altamente qualificados.",
+        "image": "/img/services/dedetizacao.jpg"
+    },
+    {
+        "name": "Desentupimento de Esgoto",
+        "url": "desentupimento/esgoto",
+        "description": "Fazemos toda a desobstrução da tubulação, permitindo o fluxo normal da água.",
+        "image": "/img/services/desentupimento-de-esgoto.jpg"
+    }
+]
