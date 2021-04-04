@@ -2,10 +2,7 @@
 
 FALTA:
 - Concluir sistema de Emails
-- Páginas para cada serviço
-- Alguns outros botões para facilitar contato
-- Limpeza de arquivos desnecessários
-- Verificação de Desempenho
+- Responsividade (funcionar bem em qualquer dispositivo)
 - Amplificação e detalhamento do Readme para fácil utilização
 - Entregar o projeto completo
 
