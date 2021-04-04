@@ -1,9 +1,6 @@
 {
     "server": {
-        "port": 3000,
-        "session": {
-            "secret": "7OOUZDutdMbc1fvW2U5AhPNYCybZARlc"
-        }
+        "port": 3000
     },
     "email": {
         "host": "",

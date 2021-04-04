@@ -8,7 +8,7 @@ block content
       for service in services   
         .col-4
           .cardbox
-            a(href=service.url) 
+            a(href="/services/" + service.url) 
               img.cardbox-image(src=service.image, alt="Foto de " + service.name)
               .cardbox-content
                 h2.cardbox-title #{service.name}

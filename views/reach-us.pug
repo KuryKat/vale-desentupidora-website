@@ -2,29 +2,39 @@ extends layouts/layout/index
 
 block head
   link(rel="stylesheet", href="/css/pages/info.css")
+  link(rel="stylesheet", href="/css/pages/reachUs.css")
 
 
 block content
-  .contact-us
+  .contact-us.margin-top
     .container
-      h1 Contatos
-      hr.line
-      a(href="tel:5512997553884") 
-        span.icon-text
-          span.icon 
-            i.fas.fa-phone-alt.fa-2x
-          span.space
-            h1 +55 (12) 99755-3884
-      a(href="https://api.whatsapp.com/send?phone=5512997553884&text=Olá") 
-        span.icon-text
-          span.icon 
-            i.fab.fa-whatsapp.fa-2x
-          span.space
-            h1 +55 (12) 99755-3884
-      span.icon-text
-        span.icon 
-          i.fas.fa-map-marker-alt.fa-2x
-        span.space
-          h1 R. Padre Francisco, 52 - Vila Nossa Sra. das Gracas, Taubaté - SP, 12060-550
-      .google-maps
+      .row
+        .col-6
+          h1.title.bold #{message.title}
+          .container
+            .content
+              p.text #{message.text}
+              if message.hasButton 
+                a.btn.btn-primary(href=message.button.link) #{message.button.text}
+        .col-6
+          h1 Contatos
+          hr.line
+          a(href="tel:5512997553884") 
+            span.icon-text
+              span.icon 
+                i.fas.fa-phone-alt.fa-2x
+              span.space
+                h1 +55 (12) 99755-3884
+          a(href="https://api.whatsapp.com/send?phone=5512997553884&text=Olá") 
+            span.icon-text
+              span.icon 
+                i.fab.fa-whatsapp.fa-2x
+              span.space
+                h1 +55 (12) 99755-3884
+          span.icon-text
+            span.icon 
+              i.fas.fa-map-marker-alt.fa-2x
+            span.space
+              h1 R. Padre Francisco, 52 - Vila Nossa Sra. das Gracas, Taubaté - SP, 12060-550
+      .content.align-items-center
         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.2423156791924!2d-45.55685708503236!3d-23.014873484957015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzUzLjUiUyA0NcKwMzMnMTYuOCJX!5e0!3m2!1spt-BR!2sbr!4v1617379782086!5m2!1spt-BR!2sbr' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy')

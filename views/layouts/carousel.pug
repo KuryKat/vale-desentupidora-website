@@ -1,4 +1,4 @@
-#main-carousel.carousel.slide(data-bs-ride='carousel' data-bs-interval='100000')
+#main-carousel.carousel.slide(data-bs-ride='carousel' data-bs-interval='10000')
   .carousel-indicators
     for carousel in carousels
       if carousel.index == 0
@@ -17,7 +17,7 @@
                   for icon in carousel.icons
                       span.icon-text.black-shadow
                         span.icon 
-                          i(class="fas fa-" + icon.name + " fa-2x")
+                          i(class= icon.type + " fa-" + icon.name + " fa-2x")
                         span.space
                           h1 #{icon.text}
               p #{carousel.text}

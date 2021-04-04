@@ -7,7 +7,14 @@ block content
   .info-page
     h1.title.bold #{message.title}
     .container.flex-view
-      p.text #{message.text}
-      img.image(src=message.image.url, alt=message.image.alt)
+      .content
+        p.text #{message.text}
+        if message.hasButton 
+          a.btn.btn-primary(href=message.button.link) #{message.button.text}
+            if message.button.hasSideIcon 
+              span.icon
+                i(class= message.button.icon.type + " fa-" + message.button.icon.name)
+      if message.image
+        img.image(src=message.image.url, alt=message.image.alt)
 
 

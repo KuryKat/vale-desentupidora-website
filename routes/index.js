@@ -9,8 +9,7 @@ module.exports = (carousels, services, { title, text, image }) => {
       message: {
         title,
         text,
-        image,
-        insideBox: true
+        image
       }
     })
   })

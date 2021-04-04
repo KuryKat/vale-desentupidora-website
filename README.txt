@@ -9,6 +9,11 @@ FALTA:
 - Amplificação e detalhamento do Readme para fácil utilização
 - Entregar o projeto completo
 
+ESCALA DAS IMAGENS:
+- Ícone = 32x32
+- Logo = 128x128
+- Carrossel = 1920x1080
+- Serviços e outras imagens = tanto faz
 =========================================
 
 INSTRUÇÕES PARA UTILIZAÇÃO DO SITE

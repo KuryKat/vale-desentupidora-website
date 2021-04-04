@@ -1,11 +1,11 @@
-.not-found {
+.message-content {
   background-color: #7eff7e;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.code {
+.message-title {
   font-size: 5rem;
   color: black;
 }

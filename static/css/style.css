@@ -29,7 +29,6 @@ body {
   color: black;
   font-size: 1em;
   font-family: sans-serif;
-  /* margin-bottom: 100px; */
 }
 
 /* CUSTOM CSS
@@ -43,6 +42,10 @@ body {
 .navbar a:hover {
   text-decoration: none;
   color: white !important;
+}
+
+.icon {
+  padding: 5px;
 }
 
 .reach-us {
@@ -95,10 +98,6 @@ body {
 
 .icon-text h1 {
   font-size: 1.5rem !important;
-}
-
-.contact-us .container {
-  max-width: 600px;
 }
 
 .space {

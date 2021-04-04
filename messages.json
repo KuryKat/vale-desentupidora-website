@@ -5,6 +5,11 @@
         "image": {
             "url": "/img/splash/limpeza-caixa-de-gordura.png",
             "alt": "Foto Ilustrativa"
+        },
+        "hasButton": true,
+        "button": {
+            "link": "https://api.whatsapp.com/send?phone=5512997553884&text=Olá",
+            "text": "+55 (12) 99755-3884"
         }
     },
     "atendimento": {
@@ -13,14 +18,20 @@
         "image": {
             "url": "/img/splash/vazamento-de-agua.jpg",
             "alt": "Foto Ilustrativa"
+        },
+        "hasButton": true,
+        "button": {
+            "link": "https://api.whatsapp.com/send?phone=5512997553884&text=Olá",
+            "text": "+55 (12) 99755-3884"
         }
     },
     "faleConosco": {
         "title": "Fale Conosco!",
         "text": "Envie-nos uma mensagem ou nos ligue gratuitamente, estamos disponíveis para lhe atender e resolver de uma vez por todas seu problema.",
-        "image": {
-            "url": "/img/splash/limpeza-caixa-dagua.jpg",
-            "alt": "Foto Ilustrativa"
+        "hasButton": true,
+        "button": {
+            "link": "#orcamento",
+            "text": "Faça um Orçamento"
         }
     },
     "carousels": [

@@ -1,4 +1,5 @@
 const express = require('express')
+const findService = require('../utils/findService')
 const router = express.Router()
 
 /**
@@ -12,24 +13,66 @@ module.exports = (services) => {
     })
   })
 
-  router.get('/:service', (req, res, next) => {
+  router.get('/:serviceName', (req, res, next) => {
     const { serviceName } = req.params
-    if (serviceName === 'desentupimento') {
-      next()
-    }
 
-    services.forEach((service) => {
-      if (service.name === serviceName) {
-        res.render('info', {})
-      }
-    })
+    const result = findService(services, serviceName)
+
+    if (result.found) {
+      return res.render('info', {
+        title: 'Serviço: ' + result.foundService.name,
+        message: {
+          title: result.foundService.name,
+          text: result.foundService.description,
+          image: {
+            url: result.foundService.image,
+            alt: 'Imagem Ilustrativa de ' + result.foundService.name
+          },
+          hasButton: true,
+          button: {
+            link: 'https://api.whatsapp.com/send?phone=5512997553884&text=Olá eu gostaria de falar sobre ' + result.foundService.name,
+            text: 'Mais informações',
+            hasSideIcon: true,
+            icon: {
+              name: 'whatsapp',
+              type: 'fab'
+            }
+          }
+        }
+      })
+    }
+    next()
   })
 
-  router.get('/desentupimento/:tipo', (req, res) => {
-    // const { tipo } = req.params
+  router.get('/desentupimento/:type', (req, res, next) => {
+    const { type } = req.params
 
-    // services.forEach();
-    res.render('info', {})
+    const result = findService(services, type)
+
+    if (result.found) {
+      return res.render('info', {
+        title: 'Serviço: ' + result.foundService.name,
+        message: {
+          title: result.foundService.name,
+          text: result.foundService.description,
+          image: {
+            url: result.foundService.image,
+            alt: 'Imagem Ilustrativa de ' + result.foundService.name
+          },
+          hasButton: true,
+          button: {
+            link: 'https://api.whatsapp.com/send?phone=5512997553884&text=Olá eu gostaria de falar sobre ' + result.foundService.name,
+            text: 'Mais informações',
+            hasSideIcon: true,
+            icon: {
+              name: 'whatsapp',
+              type: 'fab'
+            }
+          }
+        }
+      })
+    }
+    next()
   })
 
   return router

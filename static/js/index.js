@@ -1,6 +1,6 @@
 $(() => {
   $('.navbar-on').each((index, item) => {
-    if (window.location.href.replace('#', '') === item.href) { item.classList += ' is-active' }
+    if (window.location.href.replace(/#.+/g, '') === item.href) { item.classList += ' is-active' }
   })
 
   const navbar = $('.navbar')

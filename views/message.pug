@@ -1,10 +1,10 @@
 extends layouts/layout/index
 
 block head 
-  link(rel="stylesheet", href="/css/pages/404.css")
+  link(rel="stylesheet", href="/css/pages/message.css")
 
 block content
-  .container.not-found
-    h1.code #{title}
+  .container.message-content
+    h1.message-title #{title}
     h2.message #{text}
-    a.btn.btn-primary.btn-green(href=url || "/") Voltar
+    a.btn.btn-primary(href=url || "/") Voltar
