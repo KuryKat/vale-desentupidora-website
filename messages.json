@@ -31,14 +31,14 @@
         "hasButton": true,
         "button": {
             "link": "#orcamento",
-            "text": "Faça um Orçamento"
+            "text": "Solicite um Orçamento"
         }
     },
     "carousels": [
         {
             "index": 0,
             "title": "Realizamos Desentupimentos em Geral. Atendemos 24 horas em toda a Cidade",
-            "text": "Click no botão abaixo e solicite seu ORÇAMENTO 100% GRÁTIS. E Obtenha um desconto diferenciado e exclusivo!",
+            "text": "Clique no botão abaixo e solicite seu ORÇAMENTO 100% GRÁTIS. E Obtenha um desconto diferenciado e exclusivo!",
             "image": {
                 "url": "/img/carousel/carousel-image-1.jpg",
                 "alt": "Carousel Image"
@@ -47,13 +47,13 @@
             "hasButton": true,
             "button": {
                 "link": "#orcamento",
-                "text": "Faça um orçamento"
+                "text": "Solicite um orçamento"
             }
         },
         {
             "index": 1,
             "title": "Realizamos serviços para todos os tipos de públicos:",
-            "text": "Entre em contato e receba um desconto super diferenciado: Aceitamos todos os cartões de débito e crédito!",
+            "text": "Entre em contato e pague do seu jeito! Aceitamos todos os cartões de débito e crédito!",
             "image": {
                 "url": "/img/carousel/carousel-image-2.jpg",
                 "text": "Carousel Image"

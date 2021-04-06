@@ -1,4 +1,1 @@
-.content {
-  display: flex;
-  flex-direction: column;
-}
+.content{display:flex;flex-direction:column}.google-maps{width:calc(4.875rem + 43.5vw);height:calc(3.9375rem + 32.25vw);border:0}@media (min-width:1200px){.google-maps{width:37.5rem}}@media (min-width:1200px){.google-maps{height:28.125rem}}.content.align-items-center p{font-size:calc(1.325rem + 0.9vw);text-align:center}@media (min-width:1200px){.content.align-items-center p{font-size:2rem}}

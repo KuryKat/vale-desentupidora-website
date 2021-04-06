@@ -1,3 +1,18 @@
-#orcamento
-  form(action="", method="post") 
-    .budget 
+link(rel="stylesheet", href="/css/budget.css")
+
+#orcamento.container.budget
+  h1 Solicite um orçamento totalmente gratuito!
+  form(action="/", method="post")
+    .form-floating.mb-3
+      input#name.form-control(name="name" type='text' placeholder='João da Silva')
+      label(for='name') Nome Completo
+    .form-floating.mb-3
+      input#email.form-control(name="email" type='text' placeholder='name@example.com')
+      label(for='email') Endereço de Email
+    .form-floating.mb-3
+      input#subject.form-control(name="subject" type='text' placeholder='Em que podemos te ajudar?')
+      label(for='subject') Em que podemos te ajudar?
+    .form-floating.mb-3
+      textarea#text.form-control(name="text" rows='5' placeholder='Escreva sua mensagem descrevendo suas necessidades.')
+      label(for='text') Descreva sua necessidade ou observações para o orçamento.
+    button.btn.btn-secondary Solicitar Orçamento

@@ -1,12 +1,15 @@
+script(src="/js/services.js")
+link(rel="stylesheet", href="/css/card.css")
+
 block content
-  .container.services
+  .services
     .title
       h2 Conheça
       h1.bold Nossos Serviços
     hr.line
     .row.align-items-center
       for service in services   
-        .col-4
+        .col-sm
           .cardbox
             a(href="/services/" + service.url) 
               img.cardbox-image(src=service.image, alt="Foto de " + service.name)

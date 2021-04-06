@@ -9,7 +9,7 @@
     for carousel in carousels
       if carousel.index == 0
         .carousel-item.active
-          img.d-block.w-100(src=carousel.image.url alt=carousel.image.text)
+          img.d-block.w-100(src=carousel.image.url alt=carousel.image.text || "Carousel Image")
           .carousel-caption
               h1.bold #{carousel.title}
               if carousel.hasIcons

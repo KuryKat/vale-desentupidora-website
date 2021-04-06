@@ -1,16 +1,16 @@
 .info
   .container.reach-us
-    a.call-us(href="tel:5512997553884") 
+    a.call-us(href="tel:" + number.clean) 
       span.icon-text 
         span.icon
           i.fas.fa-blender-phone.fa-2x
         span.space
           h2 Ligue Grátis 
-            h1.bold +55 (12) 99755-3884
+            h1.bold #{number.formated}
     a(href="/") 
       img(src="/img/logo.png", alt="Logo")
     .actions
-      a(href="https://api.whatsapp.com/send?phone=5512997553884&text=Olá") 
+      a(href="https://api.whatsapp.com/send?phone=" + number.clean + "&text=Olá") 
         span.icon-text 
           span.icon 
             i.fas.fa-headset.fa-2x

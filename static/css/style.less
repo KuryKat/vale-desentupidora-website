@@ -1,0 +1,282 @@
+@import "../../node_modules/rfs/less.less";
+
+/* GLOBAL CSS
+=========================*/
+@default-color: #01cc00;
+@dark-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+.field-body {
+  flex-grow: 7 !important;
+}
+
+.main-container {
+  min-height: 72vh;
+}
+
+body {
+  background-color: rgba(67, 255, 67, 0.274);
+  // background-color: whitesmoke;
+  margin-top: 50px;
+  color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+/* GENERAL CSS
+=========================*/
+.space {
+  .margin-left(0.5rem);
+}
+
+.margin-top {
+  .margin-top(1rem);
+}
+
+.margin-bottom {
+  .margin-bottom(1rem);
+}
+
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.carousel-caption h1 {
+  .font-size(3.5rem);
+  text-shadow: @dark-shadow;
+}
+
+.black-shadow {
+  text-shadow: @dark-shadow;
+}
+
+.carousel-caption p {
+  .font-size(1.2rem);
+  color: whitesmoke;
+  text-shadow: @dark-shadow;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+.icon {
+  padding: 5px;
+}
+
+.reach-us {
+  margin-bottom: 0.5rem;
+  padding: 1.2rem;
+  background-color: #004300;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reach-us a {
+  text-shadow: @dark-shadow;
+}
+
+.btn-primary {
+  font-size: 1.2rem;
+  background-color: #01cc00;
+  border-color: #01b300;
+}
+
+.btn-primary:hover {
+  background-color: #01b300;
+  border-color: #01b300;
+}
+
+.btn-primary:focus,
+.btn-primary:checked {
+  background-color: #019900;
+  border-color: #019900;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions a {
+  padding: 0.5rem;
+}
+
+.icon-text {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.icon-text h1 {
+  .font-size(1.5rem) !important;
+}
+
+.icon-text h2 {
+  .font-size(0.8rem);
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.line {
+  border: 1px solid gray;
+  height: 1px;
+}
+
+.flex-icons {
+  display: flex;
+}
+
+.flex-icons .icon-text {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .actions {
+    display: none;
+  }
+
+  .call-us {
+    display: none;
+  }
+
+  .flex-icons {
+    display: none;
+  }
+
+  .carousel-caption h1 {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+nav.navbar {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  background-color: @default-color;
+}
+
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+a.nav-link,
+a.nav-link::after {
+  color: rgb(0, 0, 0) !important;
+  border-color: rgb(226, 218, 218) !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.664);
+  text-transform: uppercase;
+}
+
+a.nav-link:hover,
+a.nav-link:hover::after {
+  color: white !important;
+  border-color: rgb(250, 240, 240) !important;
+}
+
+a.nav-link.is-active {
+  color: rgb(255, 255, 255) !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .phone {
+    margin-left: 12px;
+  }
+}
+
+#navbar-mid {
+  display: block;
+}
+
+.whatsapp-badge {
+  bottom: 21px;
+  right: 23px;
+  position: fixed !important;
+  z-index: 16000160 !important;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.whatsapp-badge>img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  #navbar-mid {
+    display: flex;
+  }
+}
+
+#navbar-menu .nav-link:hover {
+  background-color: rgba(0, 204, 101, 0.6)
+}
+
+footer {
+  background-color: #018000;
+  margin-top: 30px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 -5px 10px #014d00;
+}
+
+footer a {
+  color: rgb(240, 236, 236);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), -1px -1px 2px rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+footer .level-left a:not(:last-child) {
+  margin-right: 35px;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0), -2px -2px 3px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 435px) {
+  footer .level-item img {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin-right: 0;
+  }
+}

@@ -2,13 +2,14 @@ extends layouts/layout/index
 
 block content
   include layouts/carousel
-  .margin-top
-  .row.justify-content-md-center
-    .col-10
-      .cardbox.without-margin-top.add-flex
-        .content-box
-          h1.center #{message.title}
-          p.cardbox-text #{message.text}
-        img.image-right-side(src=message.image.url, alt=message.image.alt)
-  .margin-bottom
-  include layouts/serviceCard
+  .container
+    .margin-top
+    .row.justify-content-md-center
+      .col-md
+        .cardbox.without-margin-top.add-flex
+          .content-box
+            h1.center #{message.title}
+            p.cardbox-text #{message.text}
+          img.image-right-side(src=message.image.url, alt=message.image.alt)
+    .margin-bottom
+    include layouts/serviceCard

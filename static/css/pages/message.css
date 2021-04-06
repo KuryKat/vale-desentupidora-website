@@ -1,16 +1,1 @@
-.message-content {
-  background-color: #7eff7e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.message-title {
-  font-size: 5rem;
-  color: black;
-}
-
-.message {
-  font-size: 2.5rem;
-  color: black;
-}
+.message-content{background-color:#7eff7e;display:flex;flex-direction:column;align-items:center}.message-title{font-size:calc(1.625rem + 4.5vw);color:black}@media (min-width:1200px){.message-title{font-size:5rem}}.message{font-size:calc(1.375rem + 1.5vw);color:black}@media (min-width:1200px){.message{font-size:2.5rem}}

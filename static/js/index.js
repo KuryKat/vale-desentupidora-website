@@ -1,5 +1,5 @@
 $(() => {
-  $('.navbar-on').each((index, item) => {
+  $('.navbar-on').each((_, item) => {
     if (window.location.href.replace(/#.+/g, '') === item.href) { item.classList += ' is-active' }
   })
 

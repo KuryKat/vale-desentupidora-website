@@ -1,0 +1,113 @@
+doctype html
+html(lang="pt-BR")
+  head
+    title="by KuryKat"
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(name="theme-color" content="#8b0000")
+    meta(name="description" content="Este site foi feito com profissionalismo e carinho por KuryKat. Me contrate para conseguir um site como esse!")
+    meta(name="keywords" content="website webdeveloper site carinho profissional discord KuryKat")
+    meta(name="author" content="KuryKat")
+    meta(property="og:type" content="website")
+    meta(property="og:description" content="Este site foi feito com profissionalismo e carinho por KuryKat. Me contrate para conseguir um site como esse!")
+    meta(property="og:keywords" content="website webdeveloper site carinho profissional discord KuryKat")
+    meta(property="og:site_name" content="by KuryKat")
+    meta(property="og:url" content="https://valedesentupidora.com.br/dev")
+    meta(property="og:image" content="/img/dev/logo.png")
+    link(rel="icon" href="/img/dev/favicon.ico" type="image/x-icon" sizes="128x128")
+    //- CSS LIBS
+    link(rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/lib/font-awesome/css/all.min.css")
+    //- MAIN CSS
+    link(rel="stylesheet" href="/css/pages/dev.css")
+    //- JS LIBS
+    script(src="/lib/bootstrap/js/bootstrap.bundle.min.js")
+    script(src="/lib/jquery.min.js")
+    script(src="/lib/font-awesome/js/all.min.js" defer)
+    //- MAIN JS
+    script(src="/js/dev.js")
+  body.light-theme
+    .theme-switch
+      h6 Trocar Tema
+      .themes
+        .light-theme 🌞
+        .form-check.form-switch
+          input#theme-switch.form-check-input(type='checkbox')
+        .dark-theme 🌚
+    #navbar.navbar
+      nav.navbar.navbar-expand-lg.fixed-top
+        .container-fluid
+          .navbar-brand
+            img(src="/img/dev/logo.png", alt="KuryKat Logo")
+            h1 KuryKat
+          button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbar-menu' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+            span.icon 
+              i.fas.fa-bars
+          #navbar-menu.collapse.navbar-collapse
+            .navbar-nav.flex-fill.justify-content-center
+              #navbar-mid 
+                a.nav-link(href="#title") Início
+                a.nav-link(href="#about") Sobre
+                a.nav-link(href="#contact") Contato
+    #content.container
+      #title
+        .title
+          h3 Este site foi feito por: 
+          h1 KuryKat
+          p Desça para mais informações
+      #about
+        #divider
+          hr
+          .about
+            h1 Sobre Mim
+            | Sou um jovem desenvolvedor de websites que adora aprender coisas novas todos os dias, 
+            | estou a disposição se você quiser comprar um site profissional com garantia de qualidade! 
+            | Possuo conhecimento na maior parte dos frameworks atuais e posso lhe fazer um site:
+            br 
+            | - Estático 
+            br
+            | - Dinâmico
+            br
+            | - SPA (Single Page Application) 
+            br
+            | - ScrollPage (como esta, porém melhor)
+            br
+            | Você quem decide, basta me contatar e me dizer como quer seu site e ele será feito da melhor forma possível!
+      #contact
+        #divider
+          hr
+          .contact 
+            br
+            h1 Entrar em Contato
+            h2 Deseja me contratar para fazer o seu site?
+            h2 Fez a escolha certa!
+            h2 Você pode me encontrar por aqui:
+            .contact-channels
+              .contact-channel
+                img#discord-logo(src="/img/icons/Discord/black.svg", alt="Discord Logo")
+                a(href="https://discord.com/users/367425061122211843" target="_blank")
+                  | Kurumi Tokisaki#7872 
+              .contact-channel
+                img#twitter-logo(src="/img/icons/Twitter/black.svg", alt="Twitter Logo")
+                a(href="https://twitter.com/KuryKat" target="_blank")
+                  | @KuryKat
+              .contact-channel
+                img#github-logo(src="/img/icons/Github/black.png", alt="Github Logo")
+                a(href="https://github.com/KuryKat" target="_blank")
+                  | @KuryKat
+              .contact-channel
+                img(src="/img/icons/linkedIn.png", alt="Linkedin Logo")
+                a(href="https://linkedin.com/in/KuryKat" target="_blank")
+                  | @KuryKat
+              .contact-channel
+                img#youtube-logo.without-max-width(src="/img/icons/Youtube/black.png", alt="Youtube Logo")
+                a(href="https://www.youtube.com/channel/UCGLlXPk-tmmh9rWJybCIdZg" target="_blank")
+                  | @KuryKat
+              .contact-channel
+                img(src="/img/icons/instagram.png", alt="Instagram Logo")
+                a(href="https://instagram.com/KuryKat/" target="_blank")
+                  | @KuryKat
+              .contact-channel
+                img(src="/img/icons/vintepila.png", alt="VintePila Logo")
+                a(href="https://www.vintepila.com.br/user-profile/MDg0NjA1NTc1OTY=/" target="_blank")
+                  | VintePila

@@ -1,7 +1,7 @@
 doctype html
 html(lang="pt-BR")
   head
-    title=(title ? title + " | " : "") + "Vale Desentupidora - Entupiu? Ligue 24 horas +55 (12) 99755-3884"
+    title=(title ? title + " | " : "") + "Vale Desentupidora - Entupiu? Ligue 24 horas " + number.formated
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
     meta(name="theme-color" content="#01cc00")
@@ -13,18 +13,15 @@ html(lang="pt-BR")
     meta(property="og:keywords" content=keywords || "desentupidora 24 horas detetização desentupir pias ralos vasos sanitários esgotos canos colunas redes pluviais caça vazamento de água limpeza de caixa d'água limpeza de caixa de gordura limpa fossa")
     meta(property="og:site_name" content="Vale Desentupidora")
     meta(property="og:url" content="valedesentupidora.com.br")
-    meta(property="og:image" content="/img/favicon.ico")
+    meta(property="og:image" content="/img/logo.png")
     link(rel="icon" href="/img/favicon.ico" type="image/x-icon" sizes="128x128")
 
     //- CSS LIBS
     link(rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css")
     link(rel="stylesheet" href="/lib/font-awesome/css/all.min.css")
 
-    //- MAIN CSSS
+    //- MAIN CSS
     link(rel="stylesheet" href="/css/style.css")
-
-    //- CSS FOR SERVICES CARDBOX
-    link(rel="stylesheet", href="/css/card.css")
 
     //- JS LIBS
     script(src="/lib/bootstrap/js/bootstrap.bundle.min.js")
@@ -36,7 +33,7 @@ html(lang="pt-BR")
     block head
   body
     include navbar
-    a.whatsapp-badge(href="https://api.whatsapp.com/send?phone=5512997553884&text=Olá")
+    a.whatsapp-badge(href="https://api.whatsapp.com/send?phone=" + number.clean + "&text=Olá")
       img(src="/img/icons/WhatsApp_icon.png", alt="Ícone Whatsapp")
     include contact
     

@@ -1,0 +1,41 @@
+@import "../../../node_modules/rfs/less.less";
+
+.title {
+  text-align: center;
+  background-color: #01a500;
+  color: white;
+  padding: 15px;
+}
+
+.contact-us a {
+  color: black;
+
+  &:hover {
+    color: rgb(36, 36, 36);
+  }
+}
+
+.flex-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .flex-view {
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+}
+
+.image {
+  .rfs(600px, max-width);
+}

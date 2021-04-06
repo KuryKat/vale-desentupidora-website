@@ -5,11 +5,12 @@ const router = express.Router()
 /**
  * @param {[{name: String, url: String, description: String, image: String | undefined}]} services
  */
-module.exports = (services) => {
+module.exports = (number, services) => {
   router.get('/', async (_, res) => {
     res.render('services', {
       title: 'Serviços',
-      services
+      services,
+      number
     })
   })
 
@@ -20,6 +21,7 @@ module.exports = (services) => {
 
     if (result.found) {
       return res.render('info', {
+        number,
         title: 'Serviço: ' + result.foundService.name,
         message: {
           title: result.foundService.name,
@@ -51,6 +53,7 @@ module.exports = (services) => {
 
     if (result.found) {
       return res.render('info', {
+        number,
         title: 'Serviço: ' + result.foundService.name,
         message: {
           title: result.foundService.name,

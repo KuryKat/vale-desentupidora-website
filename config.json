@@ -2,13 +2,16 @@
     "server": {
         "port": 3000
     },
+    "number": {
+        "clean": "5512997553884",
+        "formated": "(12) 99755-3884"
+    },
     "email": {
-        "host": "",
-        "port": 45,
-        "secure": false,
+        "host": "smtp.ethereal.email",
+        "port": 587,
         "auth": {
-            "user": "",
-            "pass": ""
+            "user": "yolanda.schiller3@ethereal.email",
+            "pass": "cEY8Zfbd1nPWy6cXqH"
         }
     }
 }

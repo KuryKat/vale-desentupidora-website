@@ -1,0 +1,1 @@
+.budget{background-color:#01b800;padding:calc(1.75rem + 6vw);margin-top:2rem}@media (min-width:1200px){.budget{padding:6.25rem}}.budget h1{font-size:calc(1.345rem + 1.14vw);text-transform:uppercase;color:white;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black}@media (min-width:1200px){.budget h1{font-size:2.2rem}}.budget textarea{height:100% !important}

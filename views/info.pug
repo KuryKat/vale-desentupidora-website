@@ -4,9 +4,9 @@ block head
   link(rel="stylesheet", href="/css/pages/info.css")
 
 block content
-  .info-page
+  .container
     h1.title.bold #{message.title}
-    .container.flex-view
+    .flex-view
       .content
         p.text #{message.text}
         if message.hasButton 

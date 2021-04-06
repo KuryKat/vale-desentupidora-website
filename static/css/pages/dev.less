@@ -1,0 +1,261 @@
+@import "../../../node_modules/rfs/less.less";
+
+// VARIABLES
+@default-color: #8b0000;
+
+// LIGHT-THEME
+@light-default-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+// DARK-THEME
+@dark-default-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+body {
+  margin-top: 50px;
+  font-size: 1em;
+  color: #ed0000 !important;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2em !important;
+  }
+}
+
+hr {
+  color: inherit;
+}
+
+/* LIGHT THEME CSS
+======================= */
+body.light-theme {
+  background-color: whitesmoke;
+
+  .title h1 {
+    text-shadow: @light-default-shadow;
+  }
+
+  #content {
+    .contact {
+      .contact-channel {
+        a {
+          &:hover {
+            text-shadow: @light-default-shadow;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* DARK THEME CSS
+======================= */
+body.dark-theme {
+  background-color: rgb(27, 27, 27);
+
+  .title h1 {
+    text-shadow: @dark-default-shadow;
+  }
+
+  #content {
+    .contact {
+      .contact-channel {
+        a {
+          &:hover {
+            text-shadow: @dark-default-shadow;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* GLOBAL CSS
+======================= */
+#navbar {
+  @media screen and (max-width: 1023px) {
+    .navbar-brand {
+      margin-left: 12px;
+    }
+  }
+
+  nav.navbar {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: @default-color;
+  }
+
+  .navbar-brand {
+    display: flex;
+    color: black;
+    align-items: center;
+
+    img {
+      max-width: 56px;
+    }
+  }
+
+  #navbar-mid {
+    display: block;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  a.nav-link,
+  a.nav-link::after {
+    color: rgb(0, 0, 0) !important;
+    border-color: rgb(226, 218, 218) !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.664);
+  }
+
+  a.nav-link:hover,
+  a.nav-link:hover::after {
+    color: white !important;
+    border-color: rgb(250, 240, 240) !important;
+  }
+
+
+
+  #navbar-menu .nav-link:hover {
+    background-color: #ca0000
+  }
+}
+
+
+#content {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    @media screen and (max-width: 1023px) {
+      height: 50vh;
+    }
+
+    h1 {
+      .font-size(5rem);
+      color: @default-color;
+      font-weight: bolder;
+    }
+
+    @media screen and (max-width: 1023px) {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    @media screen and (max-width: 1023px) {
+      height: 50vh;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+
+    @media screen and (max-width: 1023px) {
+      height: 100vh;
+      align-items: start;
+    }
+
+    .contact-channel {
+      a {
+        text-decoration: none;
+        color: @default-color;
+
+        &:hover {
+          color: #ed0000;
+        }
+      }
+
+      .without-max-width {
+        max-width: none;
+      }
+
+      img {
+        .rfs(100px, min-width);
+        .rfs(100px, max-width);
+        .rfs(10px 10px 10px 0, margin);
+      }
+
+      #youtube-logo {
+        height: 45px !important;
+
+        @media screen and (max-width: 1023px) {
+          height: 22px !important;
+        }
+      }
+    }
+
+  }
+
+  #divider {
+    hr {
+      height: 5px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+/* THEME SWITCH CSS
+======================= */
+.theme-switch {
+  top: 80px;
+  right: 10px;
+  position: fixed !important;
+  z-index: 16000160 !important;
+  width: 200px;
+
+  @media screen and (max-width: 1023px) {
+    width: 100px;
+  }
+
+  h6 {
+    text-align: center;
+  }
+
+  .themes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .light-theme,
+    .dark-theme {
+      @media screen and (max-width: 1023px) {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+
+  .form-check {
+    padding: 0 !important;
+  }
+
+  .form-switch {
+    padding: 0 !important;
+  }
+
+  .form-check-input {
+    cursor: pointer;
+    margin: 0 !important;
+
+    @media screen and (max-width: 1023px) {
+      width: 3em;
+      height: 2em;
+    }
+  }
+
+}

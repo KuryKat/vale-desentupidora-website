@@ -2,11 +2,11 @@ nav.navbar.navbar-expand-lg.fixed-top
   .container-fluid
     .navbar-brand
       .phone
-        a(href="tel:5512997553884") 
+        a(href="tel:" + number.clean) 
           span.icon-text 
             span.icon 
               i.fas.fa-phone-alt
-            span +55 (12) 99755-3884
+            span #{number.formated}
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbar-menu' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
       span.icon 
         i.fas.fa-bars
