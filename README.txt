@@ -1,9 +1,3 @@
-(readme ainda não está completo, estará completo e com todas informações assim que eu concluir o serviço)
-
-FALTA:
-- Otimizar o README.txt para ter todas as informações e ensinando de forma simples à editar os textos
-- Entregar o projeto completo
-
 =========================================
 
 INSTRUÇÕES PARA UTILIZAÇÃO DO SITE
@@ -51,5 +45,5 @@ IMAGENS DE SERVIÇOS:
 - Mude os arquivos "/static/img/services/nome-do-serviço.jpg" para a sua imagem desejada, utilizando o mesmo nome no arquivo ou alterando a url da imagem no arquivo "services.json".
 
 IMAGENS DE OUTRAS PÁGINAS:
-- Mude os arquivos "/static/img/services/nome" para sua imagem desejada, utilizando o mesmo nome no arquivo ou alterando a url da imagem no arquivo "messages.json".
+- Mude os arquivos "/static/img/splash/nome.extensão" para sua imagem desejada, utilizando o mesmo nome no arquivo ou alterando a url da imagem no arquivo "messages.json".
 
