@@ -3,6 +3,19 @@
 INSTRUÇÕES PARA UTILIZAÇÃO DO SITE
 
 ==========================================
+
+COMO LIGAR O SITE:
+
+- Tenha o NodeJS instalado na sua Host (v10+)
+
+Se existir console:
+- Instale as dependências usando "npm i" no console
+- inicie o site utilizando "npm start"
+
+Se não existir console:
+- Peça que ele execute o arquivo "/bin/www" para iniciar o site
+
+==========================================
 ESCALA DAS IMAGENS:
 
 - Ícone = 256x256
