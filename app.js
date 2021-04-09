@@ -20,9 +20,9 @@ const contactRouter = require('./routes/contact.js')
 
 const app = express()
 
-const config = JSON.parse(fs.readFileSync('./config.json'))
-const { sobre, atendimento, faleConosco, carousels } = JSON.parse(fs.readFileSync('./messages.json'))
-const services = JSON.parse(fs.readFileSync('./services.json'))
+const config = JSON.parse(fs.readFileSync(path.join(__dirname, './config.json')))
+const { sobre, atendimento, faleConosco, carousels } = JSON.parse(fs.readFileSync(path.join(__dirname, 'messages.json')))
+const services = JSON.parse(fs.readFileSync(path.join(__dirname, 'services.json')))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
