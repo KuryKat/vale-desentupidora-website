@@ -15,7 +15,6 @@ module.exports = async function sendMail (
   subject,
   text,
   from = 'me',
-  me
 ) {
   const me = { email: config.email.auth.user, name: 'Vale Desentupidora' }
   const transporter = nodemailer.createTransport(config.email)
