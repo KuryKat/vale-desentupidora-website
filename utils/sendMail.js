@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer')
 const fs = require('fs')
-const config = JSON.parse(fs.readFileSync('config.json'))
 /**
 * Function to send emails
 * @param {JSON} config
@@ -11,12 +10,14 @@ const config = JSON.parse(fs.readFileSync('config.json'))
 * @param {{name: string, email: string}} me
 */
 module.exports = async function sendMail (
+  config,
   user,
   subject,
   text,
   from = 'me',
-  me = { email: config.email.auth.user, name: 'Vale Desentupidora' }
+  me
 ) {
+  const me = { email: config.email.auth.user, name: 'Vale Desentupidora' }
   const transporter = nodemailer.createTransport(config.email)
 
   console.log(user, subject, text, from, me)
