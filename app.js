@@ -23,6 +23,7 @@ const app = express()
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')))
 const { sobre, atendimento, faleConosco, carousels } = JSON.parse(fs.readFileSync(path.join(__dirname, 'messages.json')))
 const services = JSON.parse(fs.readFileSync(path.join(__dirname, 'services.json')))
+console.log(path.join(__dirname, 'static'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
