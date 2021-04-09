@@ -23,17 +23,16 @@ const app = express()
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')))
 const { sobre, atendimento, faleConosco, carousels } = JSON.parse(fs.readFileSync(path.join(__dirname, 'messages.json')))
 const services = JSON.parse(fs.readFileSync(path.join(__dirname, 'services.json')))
-console.log(path.join(__dirname, 'static'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
-app.use(lessMiddleware('static'))
+app.use(lessMiddleware(path.join(__dirname, 'static')))
 
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use(express.static('static'))
+app.use(express.static(path.join(__dirname, 'static')))
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
