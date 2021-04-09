@@ -28,13 +28,13 @@ module.exports = (config, carousels, services, { title, text, image }) => {
 
     if (validEmail) {
       try {
-        await sendMail({ name, email }, subject, text, 'user')
+        await sendMail(config, { name, email }, subject, text, 'user')
         res.render('message', {
           number: config.number,
           title: 'Orçamento Solicitado!',
           text: 'Seu orçamento foi solicitado com sucesso, aguarde que iremos entrar em contato por email com você.'
         })
-        await sendMail({ name, email }, `Recebemos Seu Orçamento ${name}`, `Olá, recebemos seu orçamento de "${subject}"\nEm breve iremos lhe enviar um email com o orçamento completo!\n\nSe quiser um contato mais veloz pode nos contatar pelo WhatsApp ou ligando para: ${config.number.formated}!\nAgradecemos o contato!\n\n~ Vale Desentupidora`)
+        await sendMail(config, { name, email }, `Recebemos Seu Orçamento ${name}`, `Olá, recebemos seu orçamento de "${subject}"\nEm breve iremos lhe enviar um email com o orçamento completo!\n\nSe quiser um contato mais veloz pode nos contatar pelo WhatsApp ou ligando para: ${config.number.formated}!\nAgradecemos o contato!\n\n~ Vale Desentupidora`)
       } catch (error) {
         next(error)
       }
