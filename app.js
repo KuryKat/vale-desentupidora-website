@@ -32,9 +32,7 @@ app.use(lessMiddleware(path.join(__dirname, 'static')))
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-
-app.use('/img', express.static(path.join(__dirname, 'static', 'img')))
-
+app.use(express.static(path.join(__dirname, 'static')))
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
